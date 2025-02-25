@@ -3,20 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css"> 
+    <title>Damien White - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Header and Navigation -->
     <header>
-        <h1>Welcome to My Portfolio</h1>
+        <div class="logo">Damien White</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#posts">Posts</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#">Language</a></li>
+            </ul>
+        </nav>
     </header>
-    <section>
-        <h2>About Me</h2>
-        <p>Introduce yourself here.</p>
-    </section>
-    <section>
-        <h2>Projects</h2>
-        <p>Showcase your projects here.</p>
-    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Hero Section -->
+        <section id="about" class="hero">
+            <div class="hero-content">
+                <h1>Damien White</h1>
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i> &nbsp; Denver, CO
+                </div>
+                <p>I'm a Junior Software Developer with a passion for problem-solving and a strong foundation in object-oriented programming and web application development. Skilled in analytical thinking, project management, and data-driven decision-making.</p>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <h2>What I work with</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <span class="tech-icon" style="font-size: 24px; color: #ED8B00;">
+                        <i class="fab fa-java"></i>
+                    </span> 
+                    Java
+                </div>
+                <div class="skill-item">
+                    <span class="tech-icon" style="font-size: 24px; color: #F7DF1E;">
+                        <i class="fab fa-js-square"></i>
+                    </span> 
+                    JavaScript
+                </div>
+                <div class="skill-item">
+                    <span class="tech-icon" style="font-size: 24px; color: #E34F26;">
+                        <i class="fab fa-html5"></i>
+                    </span> 
+                    HTML
+                </div>
+                <div class="skill-item">
+                    <span class="tech-icon" style="font-size: 24px; color: #1572B6;">
+                        <i class="fab fa-css3-alt"></i>
+                    </span> 
+                    CSS
+                </div>
+                <div class="skill-item">
+                    <span class="tech-icon" style="font-size: 24px; color: #4FC08D;">
+                        <i class="fab fa-vuejs"></i>
+                    </span> 
+                    Vue.js
+                </div>
+                <div class="skill-item">
+                    <span class="tech-icon" style="font-size: 24px; color: #6DB33F;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6DB33F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                          <path d="M2 17l10 5 10-5"/>
+                          <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </span> 
+                    Spring Boot
+                </div>
+                <div class="skill-item">
+                    <span class="tech-icon" style="font-size: 24px; color: #336791;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                          <path fill="#336791" d="M12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2M12.5 17.031V19.035C12.5 19.035 10.464 19.892 8.414 19.035C6.364 18.179 5.243 15.174 5.243 15.174C5.243 15.174 6.364 12.17 8.414 11.313C10.464 10.457 12.5 11.313 12.5 11.313V13.317C11.434 13.317 10.571 14.18 10.571 15.245C10.571 16.309 11.434 17.031 12.5 17.031M14.5 19.035V17.152H17.5V14.273H14.5V12.27H19.5V19.035"/>
+                        </svg>
+                    </span> 
+                    PostgreSQL
+                </div>
+                <div class="skill-item">
+                    <span class="tech-icon" style="font-size: 24px; color: #F29111;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                          <path fill="#F29111" d="M12 3C7.58 3 4 4.79 4 7V17C4 19.21 7.59 21 12 21S20 19.21 20 17V7C20 4.79 16.42 3 12 3M18 17C18 17.5 15.87 19 12 19S6 17.5 6 17V14.77C7.61 15.55 9.72 16 12 16S16.39 15.55 18 14.77V17M18 12.45C16.7 13.4 14.42 14 12 14C9.58 14 7.3 13.4 6 12.45V9.64C7.47 10.47 9.61 11 12 11C14.39 11 16.53 10.47 18 9.64V12.45M12 9C8.13 9 6 7.5 6 7S8.13 5 12 5C15.87 5 18 6.5 18 7S15.87 9 12 9Z"/>
+                        </svg>
+                    </span> 
+                    SQL
+                </div>
+                <div class="skill-item">
+                    <span class="tech-icon" style="font-size: 24px; color: #3776AB;">
+                        <i class="fab fa-python"></i>
+                    </span> 
+                    Python
+                </div>
+                <div class="skill-item">
+                    <span class="tech-icon" style="font-size: 24px; color: #F05032;">
+                        <i class="fab fa-git-alt"></i>
+                    </span> 
+                    Git
+                </div>
+                <div class="skill-item">
+                    <span class="tech-icon" style="font-size: 24px; color: #25A162;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                          <path fill="#25A162" d="M9.57,7.5C9.57,8.33 8.9,9 8.07,9C7.24,9 6.57,8.33 6.57,7.5C6.57,6.67 7.24,6 8.07,6C8.9,6 9.57,6.67 9.57,7.5M15.93,6C15.1,6 14.43,6.67 14.43,7.5C14.43,8.33 15.1,9 15.93,9C16.76,9 17.43,8.33 17.43,7.5C17.43,6.67 16.76,6 15.93,6M21,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1L21,1M12,21C8.25,19.9 5.5,15.88 5.23,11.91L5.13,11H8.13C8.13,11 8.13,11.67 8.13,12.5C8.13,12.8 8.15,13.11 8.15,13.25C8.15,17.57 12.95,16.5 12.95,16.5C14.35,16.5 16.07,14.94 17.24,14.34C16.5,17.65 13.78,20.11 12,21Z"/>
+                        </svg>
+                    </span> 
+                    JUnit
+                </div>
+                <div class="skill-item">
+                    <span class="tech-icon" style="font-size: 24px; color: #009FDA;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                          <path fill="#009FDA" d="M8.82,17.59L12,20.77L15.18,17.59L12,14.41L8.82,17.59M17.6,2.59C17.6,2.59 17.31,2.3 17,2C16.74,1.74 16.45,1.5 16.24,1.29L16,1L2,15L5,18L19,4L17.6,2.59M5,2C3.9,2 3,2.9 3,4V20C3,21.1 3.9,22 5,22H20C20.53,22 21.05,21.8 21.41,21.44C21.8,21.05 22,20.53 22,20V10.24L20,12.24V20H5V4H11L13,2H5Z"/>
+                        </svg>
+                    </span> 
+                    Agile
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio-section">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="image-container">
+                        <svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="#2a6496"/>
+                            <text x="50%" y="50%" font-family="Arial" font-size="30" fill="white" text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="50%" dy="-60">Lending Catalog Application</tspan>
+                                <tspan x="50%" dy="60" font-size="80">📚</tspan>
+                                <tspan x="50%" dy="80" font-size="20">Java • SQL • JDBC</tspan>
+                            </text>
+                        </svg>
+                    </div>
+                    <div class="portfolio-details">
+                        <h3>Lending Catalog Application</h3>
+                        <p>A Java and SQL-based cataloging tool with a menu-driven UI for user interaction and integrated search functionalities.</p>
+                        <div class="feature-list">
+                            <div class="feature">
+                                <i class="fas fa-search"></i> Keyword Search
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-filter"></i> Category Filtering
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-desktop"></i> Menu-driven UI
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image-container">
+                        <svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="#3a7ca5"/>
+                            <text x="50%" y="50%" font-family="Arial" font-size="30" fill="white" text-anchor="middle" dominant-baseline="middle">
+                                <tspan x="50%" dy="-60">Data Pipeline Optimization</tspan>
+                                <tspan x="50%" dy="60" font-size="80">📊</tspan>
+                                <tspan x="50%" dy="80" font-size="20">Python • SQL • Data Modeling</tspan>
+                            </text>
+                        </svg>
+                    </div>
+                    <div class="portfolio-details">
+                        <h3>Data Pipeline Optimization</h3>
+                        <p>Streamlined data pipelines leveraging Python, data modeling, and SQL techniques to enhance data flow efficiency and processing across diverse systems.</p>
+                        <div class="feature-list">
+                            <div class="feature">
+                                <i class="fas fa-database"></i> SQL Optimization
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-code"></i> Python Development
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-sync"></i> Process Streamlining
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="portfolio-section">
+            <h2>Work Experience</h2>
+            <div class="experience-container">
+                <div class="experience-item">
+                    <h3>Junior Software Engineer</h3>
+                    <p class="experience-meta">StratorSoft | Denver, CO | Jan 2024 - Jan 2025</p>
+                    <ul class="experience-details">
+                        <li>Streamlined data pipelines leveraging Python, data modeling, and SQL techniques to enhance data flow efficiency and processing</li>
+                        <li>Conducted extensive testing on data pipelines to verify functionality, identify bugs, and ensure data integrity</li>
+                        <li>Enhanced operational efficiency through close collaboration with cross-functional teams</li>
+                    </ul>
+                </div>
+                
+                <div class="experience-item">
+                    <h3>Kitchen Assistant</h3>
+                    <p class="experience-meta">Linkside Cafe | Punta Gorda, FL | Jun 2018 - Aug 2019</p>
+                    <ul class="experience-details">
+                        <li>Ensured all kitchen equipment was sanitized using steam to uphold a hygienic kitchen environment</li>
+                        <li>Contributed to food preparation by assisting with tasks such as chopping, mixing, and portioning</li>
+                        <li>Managed kitchen organization by stocking supplies, managing inventory, and ensuring cleanliness</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="portfolio-section">
+            <h2>Education</h2>
+            <div class="education-container">
+                <div class="education-item">
+                    <h3>Full-stack Bootcamp</h3>
+                    <p class="education-meta">Tech Elevator | Pittsburgh, PA | Apr 2024 - Dec 2024</p>
+                    <p>Full-stack bootcamp designing software systems and solutions with 800+ hours of education and application</p>
+                </div>
+                
+                <div class="education-item">
+                    <h3>Associate in Science-Architectural Design & Construction Technology</h3>
+                    <p class="education-meta">Florida SouthWestern State College | Fort Myers, FL | Jul 2022</p>
+                    <p>Provides foundational knowledge in architectural design principals, construction techniques, and project management</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="portfolio-section">
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:dvw2011@outlook.com">dvw2011@outlook.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:7245541804">724-554-1804</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="#" target="_blank">LinkedIn</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <a href="#" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Damien White. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // You can add JavaScript for any interactions here
+    </script>
 </body>
 </html>
